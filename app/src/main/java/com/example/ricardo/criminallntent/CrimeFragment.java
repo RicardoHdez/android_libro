@@ -46,6 +46,13 @@ public class CrimeFragment extends Fragment {
         mCrime = CrimeLab.get(getActivity()).getCrime(crimeId);
     }
 
+    @Override
+    public void onPause(){
+        super.onPause();
+
+        CrimeLab.get(getActivity()).updateCrime(mCrime);
+    }
+
     @Override //OnCreate
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_crime, container, false);
@@ -117,11 +124,6 @@ public class CrimeFragment extends Fragment {
     public void onStart(){
         super.onStart();
         Log.d(TAG, "onStart()Fragment");
-    }
-    @Override
-    public void onPause(){
-        super.onPause();
-        Log.d(TAG, "onPause()Fragment");
     }
     @Override
     public void onStop(){
