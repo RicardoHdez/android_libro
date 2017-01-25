@@ -11,4 +11,15 @@
     <string name="show_subtitle">Mostrar</string>
     <string name="hide_subtitle">Ocultar</string>
     <string name="subtitle_format">%1$s crimenes</string>
+    <string name="crime_suspect_text">Elegir sospechoso</string>
+    <string name="crime_report_text">Enviar informe de crimen</string>
+
+    <string name="crime_report">%1$s!
+    El crimen fue ejecutado el %2$s. %3$s y %4$s</string>
+    <string name="crime_report_solved">El caso ya se resuelvio</string>
+    <string name="crime_report_unsolved">El caso aun no se resuelve</string>
+    <string name="crime_report_no_suspect">no hay sospechosos</string>
+    <string name="crime_report_suspect">el sospechoso es %s.</string>
+    <string name="crime_report_subject">CriminalIntent Crimen Reportado</string>
+    <string name="send_report">Enviar informe de crimen a traves de </string>
 </resources>
